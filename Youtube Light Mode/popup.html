@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            width: 220px;
+            font-family: 'Segoe UI', sans-serif;
+            padding: 10px;
+            background: #202020;
+            color: white;
+        }
+
+        h2 {
+            font-size: 16px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        input {
+            margin-right: 10px;
+            accent-color: #ff0000;
+        }
+
+        .note {
+            font-size: 10px;
+            color: #aaa;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>YouTube Light Mode</h2>
+
+    Video Page Appearance
+
+    <label><input type="checkbox" id="darkVideoPage"> Dark Video Page (True Black)</label>
+    <label><input type="checkbox" id="hideNavbar"> Hide Navbar (Keep Logo)</label>
+    <label><input type="checkbox" id="hideLogo"> Hide Logo</label>
+    <div style="height: 1px; background: #333; margin: 5px 0;"></div>
+
+    General Clean-Up Options
+
+    <label><input type="checkbox" id="hideRelated"> Hide Related Videos</label>
+    <label><input type="checkbox" id="hideComments"> Hide Comments</label>
+    <label><input type="checkbox" id="hideDescription"> Hide Description</label>
+    <label><input type="checkbox" id="hideMetadata"> Hide Title/Actions</label>
+    <label><input type="checkbox" id="hideShorts"> Hide All Shorts</label>
+    <label><input type="checkbox" id="hideExplore"> Hide
+        Trending/Explore</label>
+    <label><input type="checkbox" id="hideChat"> Hide Live Chat</label>
+    <label><input type="checkbox" id="hideNotifs"> Hide Notifications</label>
+    <label><input type="checkbox" id="disableAutoplay"> Disable Autoplay</label>
+
+    <p class="note">Changes apply instantly.<br>
+        <em>Developed with love by Ciramor with Gemini.</em>
+    </p>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

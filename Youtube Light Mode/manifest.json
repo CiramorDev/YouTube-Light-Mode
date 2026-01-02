@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Light Mode",
+  "version": "2.0",
+  "description": "Complete control over YouTube distractions.",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["rules.css"],
+      "run_at": "document_start"
+    }
+  ]
+}

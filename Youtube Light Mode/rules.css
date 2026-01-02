@@ -1,0 +1,93 @@
+/* --- 1. Dark Video Page (True Black) --- */
+/* Sets background to #000 only on watch pages */
+html.ft-dark-video-page.ft-is-watch-page,
+html.ft-dark-video-page.ft-is-watch-page body,
+html.ft-dark-video-page.ft-is-watch-page ytd-app,
+html.ft-dark-video-page.ft-is-watch-page ytd-page-manager,
+html.ft-dark-video-page.ft-is-watch-page #masthead-container,
+html.ft-dark-video-page.ft-is-watch-page #masthead,
+html.ft-dark-video-page.ft-is-watch-page #columns,
+html.ft-dark-video-page.ft-is-watch-page ytd-watch-flexy {
+    background-color: #000 !important;
+}
+
+/* General Fix: Only show scrollbar if content overflows */
+html {
+    overflow-y: auto !important;
+}
+
+/* --- 2. Hide Navbar (Except Logo) --- */
+/* Hides Search (#center) and Profile/Notifs (#end) - ONLY on watch page */
+html.ft-hide-navbar.ft-is-watch-page #masthead #center,
+html.ft-hide-navbar.ft-is-watch-page #masthead #end {
+    display: none !important;
+}
+
+/* --- 3. Hide Logo --- */
+/* Hides just the logo link - ONLY on watch page */
+html.ft-hide-logo.ft-is-watch-page #masthead #logo {
+    display: none !important;
+}
+
+/* --- 4. Hide Related Videos --- */
+html.ft-hide-related #secondary {
+    display: none !important;
+}
+
+/* --- 5. Hide Explore / Trending --- */
+/* Target navigation items with specific hrefs */
+html.ft-hide-explore a[href="/feed/trending"],
+html.ft-hide-explore a[href="/feed/explore"],
+html.ft-hide-explore a[href="/gaming"],
+html.ft-hide-explore ytd-guide-entry-renderer:has(a[href*="trending"]),
+html.ft-hide-explore ytd-guide-entry-renderer:has(a[href*="explore"]) {
+    display: none !important;
+}
+
+/* --- 6. Hide Shorts (Comprehensive) --- */
+/* A. Left Navigation Tab */
+html.ft-hide-shorts ytd-guide-entry-renderer:has(a[title="Shorts"]),
+html.ft-hide-shorts ytd-guide-entry-renderer:has(a[href="/shorts"]) {
+    display: none !important;
+}
+
+/* B. Shorts Shelves (Home/Search) */
+html.ft-hide-shorts ytd-rich-shelf-renderer[is-shorts],
+html.ft-hide-shorts ytd-reel-shelf-renderer {
+    display: none !important;
+}
+
+/* C. Shorts in Grids (Subscription/Home) */
+/* Modern CSS: Hide any grid item that contains a link to /shorts/ */
+html.ft-hide-shorts ytd-rich-item-renderer:has(a[href^="/shorts/"]),
+html.ft-hide-shorts ytd-grid-video-renderer:has(a[href^="/shorts/"]) {
+    display: none !important;
+}
+
+/* --- 7. Hide Live Chat --- */
+html.ft-hide-chat #chat-container,
+html.ft-hide-chat ytd-live-chat-frame {
+    display: none !important;
+}
+
+/* --- 8. Hide Notifications --- */
+html.ft-hide-notifs ytd-notification-topbar-button-renderer {
+    display: none !important;
+}
+
+/* --- 9. Hide Comments (Standalone) --- */
+html.ft-hide-comments #comments {
+    display: none !important;
+}
+
+/* --- 10. Hide Description --- */
+/* Hides the bottom row of metadata (Description) */
+html.ft-hide-description ytd-watch-metadata #bottom-row {
+    display: none !important;
+}
+
+/* --- 11. Hide Title / Channel / Actions --- */
+/* Hides the top row of metadata (Title, Channel, Likes, Share, etc.) */
+html.ft-hide-metadata ytd-watch-metadata #above-the-fold {
+    display: none !important;
+}
