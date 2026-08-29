@@ -7,17 +7,17 @@
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "../Assets/icon.png",
-      "32": "../Assets/icon.png",
-      "48": "../Assets/icon.png",
-      "128": "../Assets/icon.png"
+      "16": "Assets/icon.png",
+      "32": "Assets/icon.png",
+      "48": "Assets/icon.png",
+      "128": "Assets/icon.png"
     }
   },
   "icons": {
-    "16": "../Assets/icon.png",
-    "32": "../Assets/icon.png",
-    "48": "../Assets/icon.png",
-    "128": "../Assets/icon.png"
+    "16": "Assets/icon.png",
+    "32": "Assets/icon.png",
+    "48": "Assets/icon.png",
+    "128": "Assets/icon.png"
   },
   "content_scripts": [
     {
